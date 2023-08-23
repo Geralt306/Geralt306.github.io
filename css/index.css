@@ -406,6 +406,13 @@ canvas:not(#ribbon-canvas),
   -ms-animation: scroll-down-effect 1.5s infinite;
   animation: scroll-down-effect 1.5s infinite;
 }
+.avatar-img {
+  -webkit-animation: avatar_turn_around 2s linear infinite;
+  -moz-animation: avatar_turn_around 2s linear infinite;
+  -o-animation: avatar_turn_around 2s linear infinite;
+  -ms-animation: avatar_turn_around 2s linear infinite;
+  animation: avatar_turn_around 2s linear infinite;
+}
 .reward-main {
   -webkit-animation: donate_effcet 0.3s 0.1s ease both;
   -moz-animation: donate_effcet 0.3s 0.1s ease both;
@@ -7771,9 +7778,9 @@ input#pic-link {
   outline: 1px solid var(--theme-color) !important;
 }
 
-/* heo 加载动画头像 */
+/* heo 加载动画头像 修改项*/
 .loading-img {
-  background: url(https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp)
+  background: url(https://s2.loli.net/2023/08/23/IKJNkXsThVm2oOZ.webp)
     no-repeat center center;
   background-size: cover;
 }

@@ -1109,31 +1109,31 @@ function changeMouseMode() {
 
 //----------------------------------------------------------------
 
-/* 控制台输出字符画 start */
+/* 控制台输出字符画 start 修改项*/
 var now1 = new Date();
 
 function createtime1() {
-  var grt = new Date("08/09/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  var grt = new Date("08/22/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间
   now1.setTime(now1.getTime() + 250);
   var days = (now1 - grt) / 1000 / 60 / 60 / 24;
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到Fomalhaut🥝の小家!`,
+    `欢迎来到msaの小家!`,
     `Future is now 🍭🍭🍭`,
-    `
-        
-███████  ██████  ███    ███  █████  ██      ██   ██  █████  ██    ██ ████████ 
-██      ██    ██ ████  ████ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-█████   ██    ██ ██ ████ ██ ███████ ██      ███████ ███████ ██    ██    ██    
-██      ██    ██ ██  ██  ██ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-██       ██████  ██      ██ ██   ██ ███████ ██   ██ ██   ██  ██████     ██   
-                                              
+    `                                                                        
+                                                                         
+_|_|_|  _|_|      _|_|_|    _|_|    _|_|_|  _|_|      _|_|_|    _|_|    
+_|    _|    _|  _|    _|  _|    _|  _|    _|    _|  _|    _|  _|    _|  
+_|    _|    _|  _|    _|  _|    _|  _|    _|    _|  _|    _|  _|    _|  
+_|    _|    _|    _|_|_|    _|_|    _|    _|    _|    _|_|_|    _|_|    
+
+
 `,
     "小站已经苟活",
     dnum,
     "天啦!",
-    "©2022 By Fomalhaut",
+    "©2023 By msa",
   ];
 
   setTimeout(
@@ -1172,7 +1172,7 @@ function createtime2() {
   setTimeout(
     console.warn.bind(
       console,
-      "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",
+      "%c ⚡ Powered by msa %c 你正在访问msaの小家",
       "color:white; background-color:#f0ad4e",
       ""
     )
@@ -1282,8 +1282,8 @@ function share_() {
   try {
     // 截取标题
     var title = document.title;
-    var subTitle = title.endsWith("| Fomalhaut🥝") ? title.substring(0, title.length - 14) : title;
-    navigator.clipboard.writeText('Fomalhaut🥝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
+    var subTitle = title.endsWith("| msa") ? title.substring(0, title.length - 14) : title;
+    navigator.clipboard.writeText('msa的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
     new Vue({
       data: function () {
         this.$notify({
@@ -2519,13 +2519,13 @@ if (m == 12 && dd == 25) {//圣诞节
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 8 && dd == 11) {//站长生日
+if (m == 10 && dd == 12) {//站长生日
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("祝站长" + (y - 1998).toString() + "岁生日快乐！🥝");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 6 && dd == 30) {//小猫咪生日
+if (m == 5 && dd == 20) {//小猫咪生日
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("祝小猫咪" + (y - 1999).toString() + "岁生日快乐！🐱");
     sessionStorage.setItem("isPopupWindow", "1");
@@ -2785,11 +2785,11 @@ var now = new Date();
 function createtime() {
   // 当前时间
   now.setTime(now.getTime() + 1000);
-  var start = new Date("08/01/2022 00:00:00"); // 旅行者1号开始计算的时间
+  var start = new Date("08/22/2023 00:00:00"); // 旅行者1号开始计算的时间
   var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
   var unit = (dis / 149600000).toFixed(6);  // 天文单位
   // 网站诞生时间
-  var grt = new Date("08/09/2022 00:00:00");
+  var grt = new Date("08/22/2023 00:00:00");
   var days = (now - grt) / 1e3 / 60 / 60 / 24,
     dnum = Math.floor(days),
     hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,
@@ -2804,8 +2804,8 @@ function createtime() {
   let currentTimeHtml = "";
   (currentTimeHtml =
     hnum < 18 && hnum >= 9
-      ? `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+      ? `<img class='boardsign' src='https://pic.msaer.cn/img/F%E5%B0%8F%E5%B1%8B-%E4%B8%8B%E7%8F%AD%E4%BC%91%E6%81%AF%E5%95%A6.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
+      : `<img class='boardsign' src='https://pic.msaer.cn/img/F%E5%B0%8F%E5%B1%8B-%E4%B8%8B%E7%8F%AD%E4%BC%91%E6%81%AF%E5%95%A6.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
@@ -2984,7 +2984,7 @@ function setUniverse() {
   }
 }
 
-// 雪花开关
+// 雪花开关(这里就是默认关雪花，如果你想默认开就将none改为block)
 if (localStorage.getItem("snow") == undefined) {
   localStorage.setItem("snow", "none");
 }
@@ -3169,15 +3169,15 @@ let btstu = "url(http://api.btstu.cn/sjbz/?lx=suiji)";
 let unsplash = "url(https://source.unsplash.com/random/1920x1080/)";
 
 
-// 更换背景(自己的代码)
+// 背景图(约3190行) 下面链接换成你自己的图片链接
 if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/dm14.webp);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
-    --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --default-bg: url(https://s2.loli.net/2023/08/23/xjoTpXVD7QCF24H.webp);
+    --darkmode-bg:url(https://s2.loli.net/2023/08/23/FfyjB5LbSldVhJ8.webp);
+    --mobileday-bg: url(https://s2.loli.net/2023/08/23/LsUDoA1PwVh7GMI.webp);
+    --mobilenight-bg: url(https://s2.loli.net/2023/08/23/BPVxKqoNcTOnhtl.webp);
   }`;
 }
 // 切换背景主函数
@@ -3336,7 +3336,7 @@ function createWinbox() {
   winResize();
   window.addEventListener("resize", winResize);
 
-  // 每一类我放了一个演示，直接往下复制粘贴 a标签 就可以，需要注意的是 函数里面的链接 冒号前面需要添加反斜杠\进行转义
+  // 每一类我放了一个演示，直接往下复制粘贴 a标签 就可以，需要注意的是 函数里面的链接 冒号前面需要添加反斜杠\进行转义  美化模块主体DOM(<h3>1. 二次元</h3>
   winbox.body.innerHTML = `
 <div class="settings" style="display: block;">
 <div id="article-container" style="padding:12px;">
@@ -3407,7 +3407,7 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2023/08/23/Hc5n4xfj8kSozXy.webp)" class="imgbox" onclick="changeBg('url(https://s2.loli.net/2023/08/23/Hc5n4xfj8kSozXy.webp)')"></a></div>
               </div>
             </details>
 
@@ -3416,7 +3416,7 @@ function createWinbox() {
 
 <details class="folding-tag" cyan><summary> 查看风景背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2023/08/23/a9Eb5P6xdFM2SLr.webp)" class="imgbox" onclick="changeBg('url(https://s2.loli.net/2023/08/23/a9Eb5P6xdFM2SLr.webp)')"></a></div>
               </div>
             </details>
 
@@ -3424,7 +3424,7 @@ function createWinbox() {
 
 <details class="folding-tag" cyan><summary> 查看萌宠背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2023/08/23/esSa3Vmg4dkptKR.webp)" class="imgbox" onclick="changeBg('url(https://s2.loli.net/2023/08/23/esSa3Vmg4dkptKR.webp)')"></a></div>
               </div>
             </details>
 
@@ -3448,7 +3448,7 @@ function createWinbox() {
 <h3>6. 适配手机</h3>
 <details class="folding-tag" cyan><summary> 查看适配手机的背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/mb4.webp)" class="pimgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/mb4.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s2.loli.net/2023/08/23/gcNsHlRrL3PtEIu.webp)" class="pimgbox" onclick="changeBg('url(https://s2.loli.net/2023/08/23/gcNsHlRrL3PtEIu.webp)')"></a></div>
               </div>
             </details>
 
