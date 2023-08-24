@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.msaer.cn/posts/9daba997.html</loc>
+    
+    <lastmod>2023-10-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.msaer.cn/tags/index.html</loc>
+    
+    <lastmod>2023-08-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.msaer.cn/box/animation/index.html</loc>
+    
+    <lastmod>2023-08-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.msaer.cn/social/link/index.html</loc>
     
     <lastmod>2023-08-24</lastmod>
@@ -38,16 +65,34 @@
   </url>
   
   <url>
-    <loc>https://www.msaer.cn/tags/index.html</loc>
+    <loc>https://www.msaer.cn/categories/index.html</loc>
     
-    <lastmod>2023-08-23</lastmod>
+    <lastmod>2023-03-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.msaer.cn/categories/index.html</loc>
+    <loc>https://www.msaer.cn/box/gallery/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.msaer.cn/life/games/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.msaer.cn/box/nav/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -74,15 +119,6 @@
   </url>
   
   <url>
-    <loc>https://www.msaer.cn/life/games/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.msaer.cn/personal/love/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
@@ -92,25 +128,7 @@
   </url>
   
   <url>
-    <loc>https://www.msaer.cn/box/animation/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.msaer.cn/box/gallery/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.msaer.cn/box/nav/index.html</loc>
+    <loc>https://www.msaer.cn/site/time/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -120,15 +138,6 @@
   
   <url>
     <loc>https://www.msaer.cn/social/fcircle/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.msaer.cn/site/time/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -162,6 +171,20 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://www.msaer.cn/tags/1/</loc>
+    <lastmod>2023-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.msaer.cn/tags/2/</loc>
+    <lastmod>2023-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://www.msaer.cn/tags/Markdown/</loc>
